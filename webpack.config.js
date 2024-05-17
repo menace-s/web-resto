@@ -14,10 +14,10 @@ module.exports = {
   ],
   module: {
     rules: [
-      { 
-        test: /\.css$/, 
+      {
+        test: /\.css$/,
         use: [
-          "style-loader",//injecter le css dans le html 
+          "style-loader", //injecter le css dans le html
           {
             loader: "css-loader",
             options: {
@@ -28,8 +28,11 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
       },
     ],
-  },  
+  },
+  // stats: {
+  //   errorDetails: true,
+  // },
 };
